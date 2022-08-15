@@ -1,197 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto DrivenEats</title>
-    <link rel="stylesheet" href="Reset.css">
-    <link rel="stylesheet" href="Estilo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Reset.css" />
+    <link rel="stylesheet" href="Estilo.css" />
+  </head>
+  <body>
     <div class="topo">
-        <div>
-            <h1>DrivenEats</h1>
-            <h2>Sua comida em 6 minutos</h2>
-        </div>
+      <div>
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+      </div>
     </div>
     <div class="conteudo">
-
-        <!--Div menu para o prato-->
-        <div class="menu">
-            <!--Tirei as imagens via ifood de um restaurante que escolhi ao acaso (Novo Almoco e Janta da Eli)-->
-            <h3>Primeiro, seu prato</h3>
-            <div class="barra-itens pratos">
-                <div class="item-menu prato1" onclick="selecione_prato('.prato1')">
-                    <img class="img-item-menu" src="/imagens/Prato1.jpeg">
-                    <h4>Calabresa Acebolada</h4>
-                    <h5>Arroz, feijão, farofa, fritas e salada</h5>
-                    <div class="preco">
-                        <h6>R$25,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                    
-                </div>
-
-                <div class="item-menu prato2" onclick="selecione_prato('.prato2');">
-                    <img class="img-item-menu" src="/imagens/Prato2.jpeg">
-                    <h4>Costela Pa na pressão</h4>
-                    <h5>Arroz, feijão, farofa e salada</h5>
-                    <div class="preco">
-                        <h6>R$25,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu prato3" onclick="selecione_prato('.prato3');">
-                    <img class="img-item-menu" src="/imagens/Prato3.jpeg">
-                    <h4>Estrogonofe de Frango</h4>
-                    <h5>Acompanha arroz, batata palha e salada</h5>
-                    <div class="preco">
-                        <h6>R$25,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu prato4" onclick="selecione_prato('.prato4');">
-                    <img class="img-item-menu" src="/imagens/Prato4.jpeg">
-                    <h4>Fígado Acebolado</h4>
-                    <h5>Arroz, feijão, farofa e salada</h5>
-                    <div class="preco">
-                        <h6>R$25,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu prato5" onclick="selecione_prato('.prato5');">
-                    <img class="img-item-menu" src="/imagens/Prato5.jpeg">
-                    <h4>Filé de Frango Grelhado</h4>
-                    <h5>Arroz, feijão, fritas e salada</h5>
-                    <div class="preco">
-                        <h6>R$25,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
+      <!--Div menu para o prato-->
+      <div class="menu">
+        <!--Tirei as imagens via ifood de um restaurante que escolhi ao acaso (Novo Almoco e Janta da Eli)-->
+        <h3>Primeiro, seu prato</h3>
+        <div class="barra-itens pratos">
+          <div class="item-menu prato1" onclick="selecione_prato('.prato1')">
+            <img class="img-item-menu" src="/imagens/Prato1.jpeg" />
+            <h4>Calabresa Acebolada</h4>
+            <h5>Arroz, feijão, farofa, fritas e salada</h5>
+            <div class="preco">
+              <h6>R$25,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
             </div>
-        </div>
+          </div>
 
-        <!--Div menu para a bebida-->
-        <div class="menu">
-            <h3>Agora, sua bebida</h3>
-            <div class="barra-itens bebidas">
-                <div  class="item-menu" onclick="selecione_bebida(this);">
-                    <img class="img-item-menu" src="/imagens/Bebida1.jpg">
-                    <h4>Suco de Açaí com Laranja</h4>
-                    <h5>Copo 400ml</h5>
-                    <div class="preco">
-                        <h6>R$17,50</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu" onclick="selecione_bebida(this);">
-                    <img class="img-item-menu" src="/imagens/Bebida2.jpg">
-                    <h4>Coca-Cola</h4>
-                    <h5>Lata 350ml</h5>
-                    <div class="preco">
-                        <h6>R$7,00</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu" onclick="selecione_bebida(this);">
-                    <img class="img-item-menu" src="/imagens/Bebida3.jpg">
-                    <h4>Suco de Laranja Del Valle</h4>
-                    <h5>Copo 300ml</h5>
-                    <div class="preco">
-                        <h6>R$10,50</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu" onclick="selecione_bebida(this);">
-                    <img class="img-item-menu" src="/imagens/Bebida4.jpg">
-                    <h4>Suco de Uva Del Valle</h4>
-                    <h5>Copo 300ml</h5>
-                    <div class="preco">
-                        <h6>R$10,50</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu" onclick="selecione_bebida(this);">
-                    <img class="img-item-menu" src="/imagens/Bebida5.jpg">
-                    <h4>Mate com Limão</h4>
-                    <h5>Copo 400ml</h5>
-                    <div class="preco">
-                        <h6>R$10,50</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
+          <div class="item-menu prato2" onclick="selecione_prato('.prato2');">
+            <img class="img-item-menu" src="/imagens/Prato2.jpeg" />
+            <h4>Costela Pa na pressão</h4>
+            <h5>Arroz, feijão, farofa e salada</h5>
+            <div class="preco">
+              <h6>R$25,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
             </div>
-        </div>
+          </div>
 
-        <!--Div menu para a sobremesa-->
-        <div class="menu">
-            <h3>Por fim, sua sobremesa</h3>
-            <div class="barra-itens sobremesas">
-                <div class="item-menu sobremesa1" onclick="selecione_sobremesa(this);">
-                    <img class="img-item-menu" src="/imagens/Sobremesa1.jpg">
-                    <h4>Bombom de Morango</h4>
-                    <h5>Serve 1 pessoa</h5>
-                    <div class="preco">
-                        <h6>R$8,90</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu sobremesa2" onclick="selecione_sobremesa(this);">
-                    <img class="img-item-menu" src="/imagens/Sobremesa2.jpg">
-                    <h4>Banoffee</h4>
-                    <h5>Serve 1 pessoa</h5>
-                    <div class="preco">
-                        <h6>R$19,90</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu sobremesa3" onclick="selecione_sobremesa(this);">
-                    <img class="img-item-menu" src="/imagens/Sobremesa3.jpg">
-                    <h4>Torta Holandesa</h4>
-                    <h5>Serve 1 pessoa</h5>
-                    <div class="preco">
-                        <h6>R$15,90</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu sobremesa4" onclick="selecione_sobremesa(this);">
-                    <img class="img-item-menu" src="/imagens/Sobremesa4.jpg">
-                    <h4>Bolo Prestígio</h4>
-                    <h5>Serve 1 pessoa</h5>
-                    <div class="preco">
-                        <h6>R$21,90</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item-menu sobremesa5" onclick="selecione_sobremesa(this);">
-                    <img class="img-item-menu" src="/imagens/Sobremesa5.jpg">
-                    <h4>Mousse de Chocolate</h4>
-                    <h5>Serve 1 pessoa</h5>
-                    <div class="preco">
-                        <h6>R$12,90</h6>
-                        <ion-icon class="setinha" name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
+          <div class="item-menu prato3" onclick="selecione_prato('.prato3');">
+            <img class="img-item-menu" src="/imagens/Prato3.jpeg" />
+            <h4>Estrogonofe de Frango</h4>
+            <h5>Acompanha arroz, batata palha e salada</h5>
+            <div class="preco">
+              <h6>R$25,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
             </div>
+          </div>
+
+          <div class="item-menu prato4" onclick="selecione_prato('.prato4');">
+            <img class="img-item-menu" src="/imagens/Prato4.jpeg" />
+            <h4>Fígado Acebolado</h4>
+            <h5>Arroz, feijão, farofa e salada</h5>
+            <div class="preco">
+              <h6>R$25,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="item-menu prato5" onclick="selecione_prato('.prato5');">
+            <img class="img-item-menu" src="/imagens/Prato5.jpeg" />
+            <h4>Filé de Frango Grelhado</h4>
+            <h5>Arroz, feijão, fritas e salada</h5>
+            <div class="preco">
+              <h6>R$25,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!--Div menu para a bebida-->
+      <div class="menu">
+        <h3>Agora, sua bebida</h3>
+        <div class="barra-itens bebidas">
+          <div class="item-menu" onclick="selecione_bebida(this);">
+            <img class="img-item-menu" src="/imagens/Bebida1.jpg" />
+            <h4>Suco de Açaí com Laranja</h4>
+            <h5>Copo 400ml</h5>
+            <div class="preco">
+              <h6>R$17,50</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="item-menu" onclick="selecione_bebida(this);">
+            <img class="img-item-menu" src="/imagens/Bebida2.jpg" />
+            <h4>Coca-Cola</h4>
+            <h5>Lata 350ml</h5>
+            <div class="preco">
+              <h6>R$7,00</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="item-menu" onclick="selecione_bebida(this);">
+            <img class="img-item-menu" src="/imagens/Bebida3.jpg" />
+            <h4>Suco de Laranja Del Valle</h4>
+            <h5>Copo 300ml</h5>
+            <div class="preco">
+              <h6>R$10,50</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="item-menu" onclick="selecione_bebida(this);">
+            <img class="img-item-menu" src="/imagens/Bebida4.jpg" />
+            <h4>Suco de Uva Del Valle</h4>
+            <h5>Copo 300ml</h5>
+            <div class="preco">
+              <h6>R$10,50</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="item-menu" onclick="selecione_bebida(this);">
+            <img class="img-item-menu" src="/imagens/Bebida5.jpg" />
+            <h4>Mate com Limão</h4>
+            <h5>Copo 400ml</h5>
+            <div class="preco">
+              <h6>R$10,50</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Div menu para a sobremesa-->
+      <div class="menu">
+        <h3>Por fim, sua sobremesa</h3>
+        <div class="barra-itens sobremesas">
+          <div
+            class="item-menu sobremesa1"
+            onclick="selecione_sobremesa(this);"
+          >
+            <img class="img-item-menu" src="/imagens/Sobremesa1.jpg" />
+            <h4>Bombom de Morango</h4>
+            <h5>Serve 1 pessoa</h5>
+            <div class="preco">
+              <h6>R$8,90</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="item-menu sobremesa2"
+            onclick="selecione_sobremesa(this);"
+          >
+            <img class="img-item-menu" src="/imagens/Sobremesa2.jpg" />
+            <h4>Banoffee</h4>
+            <h5>Serve 1 pessoa</h5>
+            <div class="preco">
+              <h6>R$19,90</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="item-menu sobremesa3"
+            onclick="selecione_sobremesa(this);"
+          >
+            <img class="img-item-menu" src="/imagens/Sobremesa3.jpg" />
+            <h4>Torta Holandesa</h4>
+            <h5>Serve 1 pessoa</h5>
+            <div class="preco">
+              <h6>R$15,90</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="item-menu sobremesa4"
+            onclick="selecione_sobremesa(this);"
+          >
+            <img class="img-item-menu" src="/imagens/Sobremesa4.jpg" />
+            <h4>Bolo Prestígio</h4>
+            <h5>Serve 1 pessoa</h5>
+            <div class="preco">
+              <h6>R$21,90</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="item-menu sobremesa5"
+            onclick="selecione_sobremesa(this);"
+          >
+            <img class="img-item-menu" src="/imagens/Sobremesa5.jpg" />
+            <h4>Mousse de Chocolate</h4>
+            <h5>Serve 1 pessoa</h5>
+            <div class="preco">
+              <h6>R$12,90</h6>
+              <ion-icon
+                class="setinha escondido"
+                name="checkmark-circle"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="botao-select">
-        <button class="botao-pedido">
-            <p>Selecione os 3 itens<br>para fechar o pedido</p>
-        </button>
+      <button class="botao-pedido" onclick="avalia_pedido()">
+        <p>Selecione os 3 itens<br />para fechar o pedido</p>
+      </button>
     </div>
+
+    <!--Div da questão bônus-->
+    <div class="caixa-confirmacao escondido">
+      <div class="texto-confirmacao">
+        <p>Confirme seu pedido</p>
+        <div class="prato-pedido">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+
+        <div class="bebida-pedido">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+
+        <div class="sobremesa-pedido">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+
+        <div class="total-pedido">
+          <p>TOTAL</p>
+          <p>teste</p>
+        </div>
+        <button class="pode-pedir" onclick="finaliza_pedido()">
+          <p>Tudo certo, pode pedir!</p>
+        </button>
+        <button class="cancelar-pedido" onclick="cancela_pedido()">
+          <p>Cancelar</p>
+        </button>
+      </div>
+    </div>
+    <div class="esmaecer-tela escondido"></div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -201,5 +293,5 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

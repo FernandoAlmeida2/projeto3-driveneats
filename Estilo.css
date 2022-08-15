@@ -1,177 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap");
 
-
-body{
-    background-color: #e5e5e5;
-    width:414px;
+body {
+  background-color: #e5e5e5;
+  width: 414px;
+  min-height: 100vh;
 }
 
-h1{
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 44px;
-    color:#ffffff;
+h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 44px;
+  color: #ffffff;
 }
 
-h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color:#ffffff;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
 }
 
-h3{
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    font-size: 26px;
-    color:#333333;
+h3 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 26px;
+  color: #333333;
 }
 
-h4{
-    font-weight: 700;
-    font-size: 16px;
-    color:#333333; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-h5{
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
-    color:#a6a6a6; 
+h5 {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #a6a6a6;
 }
 
-h6{
-    font-weight: 400;
-    font-size: 16px;
-    color:#000000; 
+h6 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
 }
 
-.topo{
-    width:414px;
-    height:92px;
-    background-color: #CF2B2B;
-    display:flex;
-    align-items: center;
-    position:fixed;
-    top:0;
+.topo {
+  width: 414px;
+  height: 92px;
+  background-color: #cf2b2b;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
-.topo div{
-    margin-left:21px;
+.topo div {
+  margin-left: 21px;
 }
 
-
-.conteudo{
-    width:414px;
-    margin-top: 92px;
-    margin-bottom: 108px;
-    border-radius: 9px;
-    display:flex;
-    flex-direction: column;
+.conteudo {
+  width: 414px;
+  margin-top: 92px;
+  margin-bottom: 108px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu{
-    margin: 36px 16px 0 16px;
+.menu {
+  margin: 36px 16px 0 16px;
 }
 
-.barra-itens{
-    width:398px;
-    display: flex;
-    overflow-x: scroll;
+.barra-itens {
+  width: 398px;
+  display: flex;
+  overflow-x: scroll;
 }
 
-.item-menu{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    width:172px;
-    height:239px;
-    margin-top: 16px;
-    margin-right:14px;
-    border-radius:9px;
-    padding:0 12px 0 16px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px -4px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.item-menu {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  width: 172px;
+  height: 239px;
+  margin-top: 16px;
+  margin-right: 14px;
+  border-radius: 9px;
+  padding: 0 12px 0 16px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px -4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.img-item-menu{
-    width:144px;
-    border-radius:4px;
+.img-item-menu {
+  width: 144px;
+  border-radius: 4px;
 }
 
-.preco{
-    display:flex;
-    justify-content: space-between;
+.preco {
+  display: flex;
+  justify-content: space-between;
 }
 
-.setinha{
-    display:none;
+.escondido {
+  display: none;
 }
 
-.setinha-ligada{
-    display:initial;
-    font-size: 19px;
-    color:#32B72F;
+.setinha {
+  font-size: 19px;
+  color: #32b72f;
 }
 
-.botao-select{
-    background-color: #ffffff;
-    width: 414px;
-    height:92px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position:fixed;
-    bottom:0;
+.botao-select {
+  background-color: #ffffff;
+  width: 414px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
-.botao-pedido{
-    background-color:#cbcbcb;
-    width:364px;
-    height: 61px;
-    border-radius:50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.botao-pedido {
+  background-color: #cbcbcb;
+  width: 364px;
+  height: 61px;
+  border-radius: 50px;
+  border: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.botao-pedido p{
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+.botao-pedido p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.fechar-pedido{
-    background-color: #32B72F;
+.fechar-pedido {
+  background-color: #32b72f;
 }
 
-.fechar-pedido p{
-    font-weight: 700;
+.fechar-pedido p {
+  font-weight: 700;
 }
 
-.selecionado{
-    border-radius: 9px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+.selecionado {
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 0px 5px #32b72f;
 }
 
+.caixa-confirmacao {
+  width: 377px;
+  height: 353px;
+  background-color: #50d074;
+  border-radius: 10px;
+  position: fixed;
+  top: 184px;
+  left: 18.5px;
+  z-index: 1;
+}
+
+.texto-confirmacao {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 18px 0 18px;
+}
+
+.texto-confirmacao div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-confirmacao p {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.texto-confirmacao > p {
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.esmaecer-tela {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 414px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.pode-pedir {
+  width: 329px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  margin-top: 20px;
+  border: none;
+}
+
+.pode-pedir p {
+  color: #50d074;
+  font-weight: 700;
+}
+
+.cancelar-pedido {
+  width: 329px;
+  height: 52px;
+  background: none;
+  border: none;
+  margin-top: 10px;
+}
+
+.cancelar-pedido p {
+  font-weight: 700;
+  font-size: 20px;
+}
 
 @media (max-width: 414px) {
-    body,
-    .topo,
-    .botao-select,
-    .conteudo{
-        width:100%;
-    }
-
-    .barra-itens{
-        overflow-x: hidden;
-    }
-    
+  body,
+  .topo,
+  .botao-select,
+  .conteudo {
+    width: 100vw;
+  }
 }
